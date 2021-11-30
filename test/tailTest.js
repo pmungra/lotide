@@ -1,17 +1,17 @@
 const assert = require('chai').assert;
-const head   = require('../head');
+const tail= require('../head');
 
-describe("#head", () => {
+describe("#tail", () => {
   it("returns 1 for [1, 2, 3]", () => {
-    assert.strictEqual(head([1, 2, 3]), 1);
+    assert.strictEqual(tail([1, 2, 3]), 1);
   });
   it("returns '5' for ['5']", () => {
-    assert.strictEqual(head(['5']), '5'); 
+    assert.strictEqual(tail(['5']), '5'); 
   });
   it(`returns '(["Hello", "Lighthouse", "Labs"])' for ["Lighthouse", "Labs"]`, () => {
-    assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), '["Lighthouse", "Labs"])'); 
+    assert.strictEqual(tail(["Hello", "Lighthouse", "Labs"]), '["Lighthouse", "Labs"])'); 
   });
   it(`returns '["Yo Yo", "Lighthouse", "Labs"]' for ['5']`, () => {
-    assert.strictEqual((head["Yo Yo", "Lighthouse", "Labs"]), '5'); 
+    assert.strictEqual((tail["Yo Yo", "Lighthouse", "Labs"]), '5'); 
   });
 });
